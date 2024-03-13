@@ -72,18 +72,18 @@ def home():
         author=author,
         category=category,
         year=datetime.datetime.now().year,
+        remote_repo="https://github.com/cheikh1111/Quote_app",
     )
-
-
-@app.route("/source")
-@app.route("/source_code")
-def source():
-    return redirect("https:github.com/cheikh1111/Flask_Quote_App")
 
 
 @app.errorhandler(404)
 def e404(e):
-    return render_template("404.html", title="404 Page Not Found")
+    return render_template(
+        "404.html",
+        title="404 Page Not Found",
+        year=datetime.datetime.now(),
+        remote_repo="https://github.com/cheikh1111/Quote_app",
+    )
 
 
 if __name__ == "__main__":
