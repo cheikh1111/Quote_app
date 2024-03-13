@@ -1,0 +1,20 @@
+.Error {
+    display: block;
+    font-family: fantasy;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Home a{
+    color: rgb(3, 19, 163);
+    text-decoration: none;
+
+}
+
+.Home {
+    font-size: xx-large;
+    font-family:cursive;
+    font-weight: bold;
+    text-align:center;
+}

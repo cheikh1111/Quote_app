@@ -1,0 +1,51 @@
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+/* *{
+    line-height: 55px;
+} */
+.big_title {
+    font-size: x-large;
+}
+.quote {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+    color: rgb(5, 78, 141);
+}
+
+.quote_container {
+    width: 95%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(6, 148, 42);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category {
+    text-transform: capitalize;
+    color: rgba(10, 10, 10, 0.904);
+    margin-right: 6px;
+}
+
+.quote::before {
+    content: open-quote;
+}
+
+.quote::after {
+    content: close-quote;
+}
+
+.author {
+    color: rgb(3, 4, 97);
+}

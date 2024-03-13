@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cheikhsidiya med From mauritania">
+    <meta name="description"
+        content="Minute Quote Is An Open Source Project Based On  Api to Generate New Quote Every refresh">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/master.css' )}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='imgs/favicon.ico' )}}">
+    {% block additional_css %}{% endblock %}
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <ul class="links">
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/source">Source Code</a></li>
+            </ul>
+        </div>
+        <div class="main-area">
+            {% block main_area %}{% endblock %}
+        </div>
+        <div class="footer">
+            <p>&copy; 2023-{{year}} By Cheikhsidiya</p>
+        </div>
+    </div>
+</body>
+
+</html>

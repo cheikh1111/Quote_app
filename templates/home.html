@@ -1,0 +1,19 @@
+{% extends "base.html"%}
+
+{% block additional_css%}
+<link rel="stylesheet" href="{{ url_for('static' ,filename='css/home.css') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600&display=swap" rel="stylesheet">
+{% endblock%}
+
+{% block main_area %}
+<div class="content">
+    <div class="quote_container">
+        <p class="big_title">Quote : </p>
+        <p class="quote">{{ quote }}</p>
+        <p class="author"> Author : {{ author }}</p>
+        <p class="category"> Category : {{ category }}</p>
+    </div>
+</div>
+{% endblock %}
